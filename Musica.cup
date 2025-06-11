@@ -1,0 +1,8 @@
+parser musicaParser;
+
+terminal COMPASSO, BPM, NOTE, FRACTION, NUM, LBRACE, RBRACE, SEMICOLON, SLASH;
+non terminal programa;
+
+start with programa;
+
+programa ::= COMPASSO NUM SLASH NUM BPM NUM LBRACE RBRACE;
